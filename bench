@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+scons -c
+scons
+
+echo "[*] Benchmarking program"
+time ./quick_sort
